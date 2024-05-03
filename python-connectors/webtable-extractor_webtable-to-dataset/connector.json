@@ -1,0 +1,27 @@
+{
+    "meta" : {
+        "label": "Webtable to dataset",
+        "description": "Turn a web page table into a dataset in seconds",
+        "icon": "icon-table"
+    },
+    "readable": true,
+    "writable": false,
+    "kind": "PYTHON",
+    "paramsPythonSetup": "browse_url.py",
+    "params": [
+        {
+            "name": "tables_url",
+            "label": "URL to the table",
+            "type": "STRING",
+            "description": "",
+            "mandatory": true
+        },
+        {
+            "name": "table_to_extract",
+            "label": "Table to extract",
+            "description": "",
+            "type": "SELECT",
+            "getChoicesFromPython": true
+        }
+    ]
+}
